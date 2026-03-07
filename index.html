@@ -14,20 +14,15 @@
             let result = eval(container.innerHTML);
             container.innerHTML = result;
         }
-
             function deleteLast() {
                 let container = document.getElementById('resultArea');
                 container.innerHTML = container.innerHTML.slice(0, -1);     
-            }
-
-        
-            
+        }
     </script>
 </head>
 
 <body>
     <div id="resultArea"></div>
-
 
     <table> 
 
@@ -38,7 +33,6 @@
             <td onclick="deleteLast()" >DEL</td>
 
         </tr>
-       
 
         <tr>
             <td onclick="appendOperation(7)">7</td>
@@ -71,4 +65,5 @@
     </table>
 
 </body>
+
 </html>
